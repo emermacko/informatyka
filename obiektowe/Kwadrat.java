@@ -4,6 +4,11 @@ public class Kwadrat {
 	
 	private double bok;
 	
+	// Domyslna wartosc
+	// Kwadrat(){
+	//	bok = 1;
+	// }
+	
 	public Kwadrat(double Bok) {
 		bok = Bok;
 	}
