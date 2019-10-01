@@ -33,7 +33,7 @@ public class Main {
 		} while(promien <= 0); read.close();
 		
 		Kolo kolo1 = new Kolo(promien);
-		//Kwadrat kw1 = new Kwadrat();
+		//Kolo kolo1 = new Kolo();
 		
 		System.out.print("Pole kola o boku [" + kolo1.getPromien() + "] = ");
 		System.out.println(kolo1.obliczPole());
@@ -41,7 +41,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		//Kwadrat();
+		Kwadrat();
 		Kolo();
 	}
 
