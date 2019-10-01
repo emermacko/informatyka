@@ -35,7 +35,7 @@ public class Main {
 		Kolo kolo1 = new Kolo(promien);
 		//Kwadrat kw1 = new Kwadrat();
 		
-		System.out.print("Pole kwadratu o boku [" + kolo1.getPromien() + "] = ");
+		System.out.print("Pole kola o boku [" + kolo1.getPromien() + "] = ");
 		System.out.println(kolo1.obliczPole());
 
 	}
