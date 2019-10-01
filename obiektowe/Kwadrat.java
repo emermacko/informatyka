@@ -4,17 +4,16 @@ public class Kwadrat {
 	
 	private double bok;
 	
-	// Domyslna wartosc
-	// Kwadrat(){
-	//	bok = 1;
-	// }
-	
-	public Kwadrat(double Bok) {
-		bok = Bok;
+	Kwadrat(){
+		bok = 1;
 	}
 	
-	public void setBok(double Bok) {
-		this.bok = Bok;
+	public Kwadrat(double bok) {
+		this.bok = bok;
+	}
+	
+	public void setBok(double bok) {
+		this.bok = bok;
 	}
 	
 	public double getBok() {
