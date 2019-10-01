@@ -1,4 +1,4 @@
-package obiektowe;
+package Obiektowe;
 
 import java.util.Scanner;
 
@@ -12,9 +12,11 @@ public class KwadratMain {
 		do {
 			System.out.print("Podaj bok kwadartu [ > ] ");
 			bok = read.nextDouble();
-		} while(bok <= 0); read.close();
+		} while(bok<=0); read.close();
 		
 		Kwadrat kw1 = new Kwadrat(bok);
+		//Kwadrat kw1 = new Kwadrat();
+		
 		System.out.print("\nObwod kwadratu o boku [" + kw1.getBok() + "] = ");
 		System.out.println(kw1.obliczObwod());
 		System.out.print("Pole kwadratu o boku [" + kw1.getBok() + "] = ");
