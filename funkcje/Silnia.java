@@ -4,4 +4,5 @@ public static int silnia(int n) {
     wynik*=n;
     n-=1;
   }
+  return wynik;
  }
