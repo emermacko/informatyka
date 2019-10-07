@@ -1,4 +1,4 @@
-public static void sortowanie(int tab[]) {
+public static void babelkowe(int tab[]) {
 	int pomoc;
 	for(int j=tab.length-1; j>0; j--) {
 		for(int i=0; i<j; i++) {
