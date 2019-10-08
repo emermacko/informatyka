@@ -2,7 +2,7 @@ public static double horner(int stopienWielomianu, double[] wspolczynniki, doubl
 	double wynik = wspolczynniki[stopienWielomianu];
 
 	for(int i=stopienWielomianu-1; i>=0; i--) {
-		wynik = wynik*argument + wspolczynniki[i];
+		wynik = wynik * argument + wspolczynniki[i];
 	}
 	return wynik;
 }
