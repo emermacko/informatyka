@@ -1,4 +1,4 @@
-package Obiektowe;
+package Figury;
 
 import java.util.Scanner;
 
@@ -29,8 +29,9 @@ public class Main {
 		kw[1] = new Kwadrat();
 		kw[2] = new Kwadrat(3, "km");
 		
-		System.out.println(kw[0]);System.out.println(kw[1]);System.out.println(kw[2]);
-		System.out.println();
+		for(Kwadrat kwadrat : kw) {
+			System.out.println(kwadrat);
+		}
 	}
 	
 	public static void Kolo() {
