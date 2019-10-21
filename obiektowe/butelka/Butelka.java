@@ -1,4 +1,4 @@
-package Butelka;
+package butelka;
 
 public class Butelka {
 	
@@ -6,11 +6,27 @@ public class Butelka {
 	private double ileLitrow;
 	
 	Butelka(){
-		ileLitrow = 1;
+		this(1);
 	}
 	
 	Butelka(double ileLitrow) {
-		this.ileLitrow = ileLitrow;
+		this(ileLitrow, 10);
+	}
+	
+	Butelka(double ileLitrow, double pojemnosc) {
+		if(pojemnosc >= 10)
+				this.pojemnosc = 10;
+			else 
+				this.pojemnosc = pojemnosc;
+		
+		if(ileLitrow >= pojemnosc)
+				this.ileLitrow = pojemnosc;
+			else
+				this.ileLitrow = ileLitrow;
+	}
+	
+	public double getPojemnosc() {
+		return pojemnosc;
 	}
 	
 	public double getIleLitrow() {
@@ -22,15 +38,28 @@ public class Butelka {
 	}
 	
 	public void wlej(double ilosc) {
-		ileLitrow += ilosc;
+		double current = this.getIleLitrow();
+		this.ileLitrow += ilosc;
+		if((this.getIleLitrow()) >= this.getPojemnosc()) {
+			this.ileLitrow = this.getPojemnosc();
+		} else {
+			this.ileLitrow = current + ilosc;
+		}
 	}
 	
 	public void wylej(double ilosc) {
-		ileLitrow -= ilosc;
+		double current = this.getIleLitrow();
+		this.ileLitrow -= ilosc;
+		if((this.getIleLitrow()) <= 0)
+			this.ileLitrow = 0;
+		else
+			this.ileLitrow = current - ilosc;
 	}
 	
 	public String toString() {
-		return "Pojemnosc: " + this.ileLitrow;
+		String output = "Pojemnosc: " + this.pojemnosc
+						+ "\nObecnie: " + this.ileLitrow;
+		return output;
 	}
 
 }
@@ -41,7 +70,7 @@ public class Butelka {
  	
  	Dodac max pojemnosc
  	Mozliwosc wlewania tylko do max pojemnosci
- 	Mozliwosc wyleawnia tylko do 0
+ 	Mozliwosc wylewania tylko do 0
  	Mozliwosc przelewania pomiedzy butelkami
  	
 */
