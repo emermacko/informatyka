@@ -82,14 +82,12 @@ public class Main {
 		System.out.println("-------------------");
 		for(Butelka b : Butelki) { System.out.println(b.toString()); }
 		
-//		System.out.println("\n#################");
 //		System.out.println("Wlewanie 2L do butelki 1 ...");
 //		B[0].wlej(2);
 //		System.out.println("Wylewanie 1L z butelki 2 ...");
 //		B[1].wylej(1);
 //		System.out.println("Wylewanie 5L z butelki 3 ...");
 //		B[2].wylej(5);
-//		System.out.println("#################");
 //		
 //		for(Butelka butelka : B) {
 //			System.out.println(butelka.toString());
