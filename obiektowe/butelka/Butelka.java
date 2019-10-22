@@ -72,14 +72,3 @@ public class Butelka {
 	}
 
 }
-
-
-/* 
- 	••••  ZAD DOM  •••• 
- 	
- 	Dodac max pojemnosc
- 	Mozliwosc wlewania tylko do max pojemnosci
- 	Mozliwosc wylewania tylko do 0
- 	Mozliwosc przelewania pomiedzy butelkami
- 	
-*/
