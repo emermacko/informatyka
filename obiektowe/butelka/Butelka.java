@@ -65,7 +65,7 @@ public class Butelka {
 	}
 	
 	public String toString() {
-		String output = "----------" + this.getID() + "----------\n"
+		String output = "\n----------" + this.getID() + "----------\n"
 						+ "Pojemnosc: " + this.pojemnosc
 						+ "\nObecnie: " + this.ileLitrow;
 		return output;
