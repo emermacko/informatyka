@@ -11,12 +11,12 @@ public class Main {
 		int b1; boolean error = false;
 		do {
 			System.out.print("Z jakiej butelki przelac? [>] "); b1 = read.nextInt(); b1--;
-			
+			error = false;
 			if(b1 >= Butelki.length || b1 < 0) { // error jak zla butelka
 				System.out.println("Nie ma takiej butelki");
 				error = true;
 			}
-			if(Butelki[b1].getIleLitrow() == 0) { // error jak butelka jest pusta
+			if(!error && Butelki[b1].getIleLitrow() == 0) { // error jak butelka jest pusta
 				System.out.println("Butelka pusta");
 				error = true;
 			}
@@ -31,6 +31,7 @@ public class Main {
 		do {
 			System.out.print("Do jakiej butelki przelac? [>] "); b2 = read.nextInt(); b2--;
 			
+			error = false;
 			if(b2 >= Butelki.length || b2 < 0) { // error jak zla butelka
 				System.out.println("Nie ma takiej butelki");
 				error = true;
@@ -49,8 +50,14 @@ public class Main {
 		double zajete2 = Butelki[b2].getIleLitrow(); double pojemnosc2 = Butelki[b2].getPojemnosc();
 	
 		if(z_b1 > zajete1) {
-			Butelki[b1].wylej(zajete1);
-			Butelki[b2].wlej(zajete1);
+			if((z_b1 + zajete2) > pojemnosc2) {
+				double wolne = pojemnosc2 - zajete2;
+				Butelki[b1].wylej(wolne);
+				Butelki[b2].wlej(wolne);
+			} else {
+				Butelki[b1].wylej(zajete1);
+				Butelki[b2].wlej(zajete1);
+			}
 		} else if((z_b1 + zajete2) > pojemnosc2) {
 			double wolne = pojemnosc2 - zajete2;
 			z_b1 -= wolne;
@@ -61,9 +68,8 @@ public class Main {
 			Butelki[b2].wlej(z_b1);
 		}
 		
-		System.out.println("\n###################");
+		System.out.println("\n-------------------");
 		for(Butelka b : Butelki) { System.out.println(b.toString()); }
-		System.out.println("###################");
 		
 	}
 	
@@ -73,9 +79,8 @@ public class Main {
 		Butelki[1] = new Butelka(5,7);
 		Butelki[2] = new Butelka(10);
 		
-		System.out.println("###################");
+		System.out.println("-------------------");
 		for(Butelka b : Butelki) { System.out.println(b.toString()); }
-		System.out.println("###################");
 		
 //		System.out.println("\n#################");
 //		System.out.println("Wlewanie 2L do butelki 1 ...");
