@@ -65,10 +65,9 @@ public class Main {
 		} else {
 			Butelki[b1].wylej(z_b1);
 			Butelki[b2].wlej(z_b1);
-		}
+		}	
 		
-		
-		for(Butelka b : Butelki) { System.out.println(b.toString()); }
+		for(Butelka butelka : Butelki) { System.out.println(butelka); }
 		System.out.println("\n---------------------");
 		
 	}
@@ -79,21 +78,9 @@ public class Main {
 		Butelki[1] = new Butelka(5,7);
 		Butelki[2] = new Butelka(10);
 		
-		
-		for(Butelka b : Butelki) { System.out.println(b.toString()); }
+		for(Butelka butelka : Butelki) { System.out.println(butelka); }
 		System.out.println("---------------------");
-		
-//		System.out.println("Wlewanie 2L do butelki 1 ...");
-//		B[0].wlej(2);
-//		System.out.println("Wylewanie 1L z butelki 2 ...");
-//		B[1].wylej(1);
-//		System.out.println("Wylewanie 5L z butelki 3 ...");
-//		B[2].wylej(5);
-//		
-//		for(Butelka butelka : B) {
-//			System.out.println(butelka.toString());
-//		}
-		
+				
 		while(true) {
 			System.out.println();przelewanie(Butelki);
 		}
@@ -103,5 +90,4 @@ public class Main {
 		butelka();
 		
 	}
-
 }
