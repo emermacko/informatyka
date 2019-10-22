@@ -10,8 +10,8 @@ public class Main {
 		
 		int b1; boolean error = false;
 		do {
-			System.out.print("Z jakiej butelki przelac? [>] "); b1 = read.nextInt(); b1--;
 			error = false;
+			System.out.print("Z jakiej butelki przelac? [>] "); b1 = read.nextInt(); b1--;
 			if(b1 >= Butelki.length || b1 < 0) { // error jak zla butelka
 				System.out.println("Nie ma takiej butelki");
 				error = true;
@@ -22,16 +22,16 @@ public class Main {
 			}
 		} while(error);
 				
-		int z_b1; error = false;
+		int z_b1;
 		do {
+			 error = false;
 			System.out.print("Ile litrow przelac z butelki " + (b1+1) + "? [>] "); z_b1 = read.nextInt();
 		} while(error);
 		
-		int b2; error = false;
+		int b2;
 		do {
-			System.out.print("Do jakiej butelki przelac? [>] "); b2 = read.nextInt(); b2--;
-			
 			error = false;
+			System.out.print("Do jakiej butelki przelac? [>] "); b2 = read.nextInt(); b2--;
 			if(b2 >= Butelki.length || b2 < 0) { // error jak zla butelka
 				System.out.println("Nie ma takiej butelki");
 				error = true;
@@ -60,9 +60,8 @@ public class Main {
 			}
 		} else if((z_b1 + zajete2) > pojemnosc2) {
 			double wolne = pojemnosc2 - zajete2;
-			z_b1 -= wolne;
 			Butelki[b1].wylej(wolne);
-			Butelki[b2].wlej(z_b1);
+			Butelki[b2].wlej(wolne);
 		} else {
 			Butelki[b1].wylej(z_b1);
 			Butelki[b2].wlej(z_b1);
