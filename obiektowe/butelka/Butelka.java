@@ -1,4 +1,4 @@
-package Butelka;
+package butelka;
 
 public class Butelka {
 	
