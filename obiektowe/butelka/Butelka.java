@@ -70,5 +70,4 @@ public class Butelka {
 						+ "\nObecnie: " + this.ileLitrow;
 		return output;
 	}
-
 }
