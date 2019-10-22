@@ -67,8 +67,9 @@ public class Main {
 			Butelki[b2].wlej(z_b1);
 		}
 		
-		System.out.println("\n-------------------");
+		
 		for(Butelka b : Butelki) { System.out.println(b.toString()); }
+		System.out.println("\n---------------------");
 		
 	}
 	
@@ -78,8 +79,9 @@ public class Main {
 		Butelki[1] = new Butelka(5,7);
 		Butelki[2] = new Butelka(10);
 		
-		System.out.println("-------------------");
+		
 		for(Butelka b : Butelki) { System.out.println(b.toString()); }
+		System.out.println("---------------------");
 		
 //		System.out.println("Wlewanie 2L do butelki 1 ...");
 //		B[0].wlej(2);
