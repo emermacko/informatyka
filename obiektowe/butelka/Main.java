@@ -1,4 +1,4 @@
-package butelka;
+package Butelka;
 
 import java.util.Scanner;
 
@@ -82,7 +82,7 @@ public class Main {
 		//System.out.println("---------------------");
 				
 		while(true) {
-			System.out.println();przelewanie(Butelki);
+			System.out.println("\n");przelewanie(Butelki);
 		}
 	}
 	
