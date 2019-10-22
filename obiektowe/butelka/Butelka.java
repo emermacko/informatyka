@@ -2,8 +2,11 @@ package Butelka;
 
 public class Butelka {
 	
+	static int ID=1;
+	
 	private double pojemnosc;
 	private double ileLitrow;
+	private int id = 1;
 	
 	Butelka(){
 		this(1);
@@ -14,6 +17,7 @@ public class Butelka {
 	}
 	
 	Butelka(double ileLitrow, double pojemnosc) {
+		this.id = ID; ID++;
 		if(pojemnosc >= 10)
 				this.pojemnosc = 10;
 			else 
