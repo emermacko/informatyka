@@ -29,6 +29,10 @@ public class Butelka {
 				this.ileLitrow = ileLitrow;
 	}
 	
+	public int getID() {
+		return this.id;
+	}
+	
 	public double getPojemnosc() {
 		return pojemnosc;
 	}
@@ -61,9 +65,9 @@ public class Butelka {
 	}
 	
 	public String toString() {
-		String output = "Pojemnosc: " + this.pojemnosc
-						+ "\nObecnie: " + this.ileLitrow
-						+ "\n-------------------";
+		String output = "----------" + this.getID() + "----------\n"
+						+ "Pojemnosc: " + this.pojemnosc
+						+ "\nObecnie: " + this.ileLitrow;
 		return output;
 	}
 
