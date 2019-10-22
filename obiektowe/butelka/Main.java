@@ -68,7 +68,7 @@ public class Main {
 		}	
 		
 		for(Butelka butelka : Butelki) { System.out.println(butelka); }
-		System.out.println("\n---------------------");
+		//System.out.println("\n---------------------");
 		
 	}
 	
@@ -79,7 +79,7 @@ public class Main {
 		Butelki[2] = new Butelka(10);
 		
 		for(Butelka butelka : Butelki) { System.out.println(butelka); }
-		System.out.println("---------------------");
+		//System.out.println("---------------------");
 				
 		while(true) {
 			System.out.println();przelewanie(Butelki);
