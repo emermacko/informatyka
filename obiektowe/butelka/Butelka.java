@@ -1,4 +1,4 @@
-package butelka;
+package Butelka;
 
 public class Butelka {
 	
@@ -58,7 +58,8 @@ public class Butelka {
 	
 	public String toString() {
 		String output = "Pojemnosc: " + this.pojemnosc
-						+ "\nObecnie: " + this.ileLitrow;
+						+ "\nObecnie: " + this.ileLitrow
+						+ "\n-------------------";
 		return output;
 	}
 
