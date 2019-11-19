@@ -71,14 +71,15 @@ public class Main {
 		    PrintWriter zapis1 = new PrintWriter(output);) {
 			
 			int max=0;
+			String liczby = "";
 			
 			while(read.hasNext()){
 				String s = read.nextLine();
-			
+				int licznik=0;
+				int localmax=0;
+				
 				if(s.contains("0")) {
-					int licznik=0;
-					int localmax=0;
-					
+										
 					for(int i=0; i<s.length(); i++) {
 						if(s.charAt(i) == '0') {
 							licznik++;
@@ -87,15 +88,21 @@ public class Main {
 							licznik=0;
 						}
 					}
-					if(localmax >= max) {
-						max=localmax;
-					}
 					
+					if(localmax == max || licznik >= max) {
+						liczby += s + "\n";
+					}
+					if(localmax > max) {
+						max = localmax;
+						liczby = s + "\n";
+					}
 				}
+
 			
 			}
 			
-			System.out.println("4.3 -> " + max + "\n");			
+			System.out.println("4.3 -> " + max + "\n");	
+			System.out.println(liczby);
 			
 		} catch (FileNotFoundException e) {
         	System.out.println("Blad pliku");
