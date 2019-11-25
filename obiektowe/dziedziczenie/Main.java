@@ -10,10 +10,10 @@ public class Main {
 		
 		pracownicy[0] = dyzurny;
 		pracownicy[1] = informatyk;
-        pracownicy[2] = ksiegowy;
+        	pracownicy[2] = ksiegowy;
         
-        for(Pracownik p : pracownicy) {
-        	System.out.println(p.pobieraWyplate());
-        }
+        	for(Pracownik p : pracownicy) {
+        		System.out.println(p.pobieraWyplate());
+        	}
 	}
 }
