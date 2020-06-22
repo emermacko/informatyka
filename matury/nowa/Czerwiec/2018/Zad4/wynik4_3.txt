@@ -1,0 +1,4 @@
+4.3 
+a) Wiersze: 
+999, 
+b) Ilosc: 1
