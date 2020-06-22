@@ -1,0 +1,7 @@
+1. 422
+
+2. Podzielnych przez 8: 123
+   Podzielnych przez 2: 500
+
+3. Max wiersz: 925
+   Min wiersz: 859
